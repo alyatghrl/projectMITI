@@ -39,13 +39,15 @@ ul {
 }
 .logo {
   font-weight: bold;
-  font-size: 1.3rem;
-  color: white;       /* tetap putih */
-  background: none;   /* hapus background biru */
-  padding: 0;         /* hilangkan jarak ekstra */
-  border-radius: 0;   /* biar gak kayak tombol */
-}
+  font-size: 2.3rem;
+  color: white;
+  background: none;
+  padding: 0;
+  border-radius: 0;
 
+  display: block;      /* pastikan dianggap elemen blok */
+  text-align: left;    /* teksnya rata kiri */
+}
 .nav-links a {
   margin-left: 20px;
   font-size: 0.95rem;
