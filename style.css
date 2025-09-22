@@ -40,11 +40,12 @@ ul {
 .logo {
   font-weight: bold;
   font-size: 1.3rem;
-  background: #2563eb;
-  color: white;
-  padding: 6px 12px;
-  border-radius: 8px;
+  color: white;       /* tetap putih */
+  background: none;   /* hapus background biru */
+  padding: 0;         /* hilangkan jarak ekstra */
+  border-radius: 0;   /* biar gak kayak tombol */
 }
+
 .nav-links a {
   margin-left: 20px;
   font-size: 0.95rem;
