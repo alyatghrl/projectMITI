@@ -1,136 +1,288 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="id">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Jasa Web UMKM — NIKYService</title>
-  <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>NUYA Studio - Solusi Website untuk UMKM</title>
+  <meta name="description" content="NUYA Studio adalah penyedia jasa pembuatan website untuk membantu UMKM Indonesia agar lebih dikenal dan berkembang." />
+  <meta name="keywords" content="NUYA Studio, Website UMKM, Jasa Website" />
+  <meta name="author" content="NUYA Studio" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="icon" type="image/png" href="images/NUYA STUDIO - Copy.png" />
 </head>
-<body>
-  <!-- Header -->
-  <header class="site-header">
-    <div class="container header-inner">
-      <div class="logo">NIKYService</div>
-      <nav class="nav-links">
-        <a href="#hero">Home</a>
-        <a href="#services">Layanan</a>
-        <a href="#visi-misi">Visi Misi</a>
-        <a href="#penawaran">Penawaran</a>
-        <a href="#testimoni">Testimoni</a>
-        <a href="#contact">Kontak</a>
-      </nav>
-    </div>
-  </header>
+<body class="font-sans pb-16 md:pb-0">
 
-  <!-- Hero Section -->
-  <section id="hero" class="hero">
-    <div class="container hero-inner">
-      <div class="hero-text">
-        <span class="label">Paket Spesial UMKM</span>
-        <h1>Membangun Website Profesional untuk UMKM dalam 7 Hari</h1>
-        <p>
-          Website cepat, mudah diupdate, dan teroptimasi untuk Google. Cocok untuk toko, katering, butik, jasa, dan usaha lokal lainnya.
-        </p>
-        <div class="btn-group">
-          <a href="#penawaran" class="btn primary">Dapatkan Penawaran</a>
-          <a href="#services" class="btn secondary">Lihat Layanan</a>
-        </div>
-        <div class="features">
-          <div class="card">+SEO & Mobile<br><small>Lebih mudah ditemukan pelanggan</small></div>
-          <div class="card">CMS Sederhana<br><small>Edit produk & harga tanpa developer</small></div>
-          <div class="card">Integrasi WA/TF<br><small>Chat langsung ke pemilik / WhatsApp</small></div>
-        </div>
+  <!-- Navbar -->
+  <nav class="bg-white shadow-md sticky top-0 z-50">
+    <div class="container mx-auto px-6 py-4 flex justify-between items-center">
+      <div class="flex items-center">
+        <img src="images/NUYA STUDIO - Copy.png" alt="NUYA Studio" class="h-10 mr-2" />
+        <span class="text-2xl font-bold">NUYA <span class="text-blue-600">Studio</span></span>
       </div>
-      <div class="hero-side">
-        <div class="side-card">
-          <p><strong>Contoh website UMKM</strong></p>
-          <p>Paket Fast-Start<br><small>Landing Page + Form Order + WA</small></p>
-          <span class="badge">7 hari kerja</span>
-        </div>
+      <div class="hidden md:flex items-center space-x-8">
+        <a href="#home" class="nav-link">Home</a>
+        <a href="#about" class="nav-link">Tentang Kami</a>
+        <a href="#services" class="nav-link>">Layanan</a>
+        <a href="#contact" class="nav-link">Kontak</a>
+       
+      </div>
+      <div class="md:hidden">
+        <button id="menu-btn"><i class="fas fa-bars text-2xl"></i></button>
       </div>
     </div>
-  </section>
-
-  <!-- Services -->
-  <section id="services" class="section">
-    <div class="container">
-      <h2>Layanan Kami</h2>
-      <p>Paket Fast-Start: Landing Page + Form Order + Integrasi WA (7 hari kerja)</p>
+    <!-- Mobile Menu -->
+    <div id="mobile-menu" class="hidden md:hidden bg-white px-6 pb-4">
+      <a href="#home" class="block py-2 nav-link">Home</a>
+      <a href="#about" class="block py-2 nav-link">Tentang Kami</a>
+      <a href="#contact" class="block py-2 nav-link">Kontak</a>
     </div>
-  </section>
+  </nav>
 
-  <!-- Visi Misi -->
-  <section id="visi-misi" class="section alt">
-    <div class="container">
-      <h2>Visi & Misi</h2>
-      <div class="visi-misi-grid">
-        <div>
-          <h3>Visi</h3>
-          <p>
-            Menjadi mitra terpercaya dalam membantu UMKM memiliki website profesional, cepat, dan terjangkau untuk mendukung pertumbuhan usaha lokal.
+  <!-- Hero Slider -->
+  <section id="home" class="hero-section relative overflow-hidden">
+    <div class="slides relative">
+
+      <!-- Slide 1 -->
+      <div class="slide active grid md:grid-cols-2 gap-8 items-center px-6 container mx-auto">
+        <div class="text-section text-white space-y-6">
+          <h1 class="text-5xl md:text-6xl font-extrabold leading-tight">
+            Solusi Website <br /> untuk <span class="text-blue-200">UMKM</span>
+          </h1>
+          <p class="text-xl md:text-2xl text-blue-100">
+            Website profesional, mudah digunakan, dan terjangkau untuk mendukung bisnis Anda.
           </p>
         </div>
+        <div class="image-section flex justify-center">
+          <img src="images/NUYA STUDIO - Copy.png" alt="NUYA Studio Hero" class="w-full max-w-lg" />
+        </div>
+      </div>
+
+      <!-- Slide 2 -->
+      <div class="slide hidden grid md:grid-cols-2 gap-8 items-center px-6 container mx-auto">
+        <div class="text-section text-white space-y-6">
+          <h1 class="text-5xl md:text-6xl font-extrabold leading-tight">
+            Because every brand <br /> deserves to <span class="text-blue-200">shine</span>
+          </h1>
+          <p class="text-xl md:text-2xl text-blue-100">Kami percaya setiap UMKM layak punya website profesional.</p>
+        </div>
+        <div class="image-section flex justify-center">
+          <img src="images/heroslide2.png" alt="NUYA Hero Slide 2" class="w-full max-w-lg" />
+        </div>
+      </div>
+
+      <!-- Slide 3 -->
+      <div class="slide hidden grid md:grid-cols-2 gap-8 items-center px-6 container mx-auto">
+        <div class="text-section text-white space-y-6">
+          <h1 class="text-5xl md:text-6xl font-extrabold leading-tight">
+            From <span class="text-blue-200">YOU</span> to the world
+          </h1>
+          <p class="text-xl md:text-2xl text-blue-100">Make your own website dan bawa bisnis Anda ke pasar global.</p>
+        </div>
+        <div class="image-section flex justify-center">
+          <img src="images/heroslide3.png" alt="NUYA Hero Slide 3" class="w-full max-w-lg" />
+        </div>
+      </div>
+    </div>
+
+    <!-- Navigasi -->
+    <div class="nav-arrows absolute top-1/2 transform -translate-y-1/2 w-full flex justify-between px-6 text-white text-3xl">
+      <span class="prev cursor-pointer">&#10094;</span>
+      <span class="next cursor-pointer">&#10095;</span>
+    </div>
+    <div class="dots absolute bottom-6 w-full flex justify-center space-x-2"></div>
+  </section>
+
+  <!-- About + Visi Misi -->
+  <section id="about" class="py-20 bg-white">
+    <div class="container mx-auto px-6">
+      <h2 class="text-3xl font-bold mb-6 text-center">Tentang NUYA Studio</h2>
+      <p class="text-gray-700 max-w-3xl mx-auto text-center mb-10">
+        NUYA Studio hadir hadir khusus untuk membantu pelaku Usaha Mikro, Kecil, dan Menengah di Indonesia. Kami memahami bahwa banyak UMKM memiliki keterbatasan dalam hal teknologi, sehingga kami menawarkan solusi praktis berupa website yang mudah digunakan, tampil profesional, dan sesuai dengan karakter usaha. Dengan biaya yang terjangkau serta layanan yang ramah, ingin menjadi partner yang mendukung bisnis lokal agar lebih dikenal luas, menjangkau lebih banyak pelanggan, dan mampu bersaing di era digital.
+      </p>
+      <div class="max-w-3xl mx-auto text-gray-700 text-left space-y-6">
         <div>
-          <h3>Misi</h3>
-          <ul>
-            <li>Menyediakan solusi website yang mudah digunakan oleh UMKM.</li>
-            <li>Memberikan layanan cepat dengan kualitas desain profesional.</li>
-            <li>Membantu usaha lokal lebih mudah ditemukan secara online.</li>
-            <li>Menyediakan dukungan teknis yang ramah dan berkelanjutan.</li>
+          <h3 class="font-bold text-xl text-blue-600 mb-2">VISI</h3>
+          <p>“Menjadi solusi utama dan terpercaya bagi UMKM Indonesia dalam menghadirkan identitas digital yang profesional, dengan tujuan mendukung pertumbuhan usaha, memperluas jangkauan pasar, serta meningkatkan daya saing melalui pemanfaatan teknologi online yang mudah, terjangkau, dan berkelanjutan.”</p>
+        </div>
+        <div>
+          <h3 class="font-bold text-xl text-blue-600 mb-2">MISI</h3>
+          <ul class="list-disc pl-6 space-y-2">
+            <li>Menyediakan layanan pembuatan website yang relevan dan sesuai kebutuhan setiap jenis UMKM, baik usaha kuliner, ritel, maupun jasa, dengan desain modern, fungsional, dan ramah pengguna.</li>
+            <li>Memberikan pelayanan cepat, ramah, dan personal, sehingga pelaku UMKM merasa terbantu dalam setiap langkah transformasi digital tanpa harus menghadapi kerumitan teknis.</li>
+            <li>Mendukung UMKM dalam memperluas pasar dan meningkatkan visibilitas bisnis melalui website yang terintegrasi dengan media sosial dan strategi pemasaran digital sederhana.</li>
+            <li>Menjadi mitra jangka panjang bagi UMKM dengan menyediakan pendampingan, edukasi, serta dukungan teknis agar website yang dibuat tidak hanya hadir, tetapi juga berkembang seiring perjalanan bisnis.</li>
           </ul>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- Placeholder Sections -->
-  <section id="penawaran" class="section">
-    <div class="container">
-      <h2>Penawaran Spesial</h2>
-      <p>(Konten penawaran akan ditambahkan di sini)</p>
+  <!-- Services Section -->
+<section id="services" class="py-20 bg-gray-50">
+  <div class="container mx-auto px-6">
+    <h2 data-aos="fade-up" class="text-3xl font-bold text-center mb-10 text-gray-800">
+      Layanan Kami
+    </h2>
+    <p data-aos="fade-up" data-aos-delay="100" class="text-center text-gray-600 max-w-2xl mx-auto mb-12">
+      NUYA Studio menyediakan solusi digital lengkap untuk membantu UMKM membangun identitas profesional, memperluas pasar, dan berkembang di era digital.
+    </p>
+
+    <div class="grid md:grid-cols-3 gap-8">
+      <!-- 1. Website UMKM -->
+      <div data-aos="fade-up" class="bg-white shadow-md rounded-2xl p-6 hover:shadow-xl hover:scale-[1.02] transition-transform">
+        <div class="text-4xl text-blue-600 mb-4">1.</div>
+        <h3 class="text-xl font-bold mb-3 text-gray-800">Pembuatan Website UMKM</h3>
+        <p class="text-gray-600 mb-3">
+          Website profesional yang mudah digunakan dan disesuaikan dengan karakter bisnis Anda.
+        </p>
+        <ul class="list-disc list-inside text-gray-600 space-y-1">
+          <li>Website profil & toko online</li>
+          <li>Landing page promosi</li>
+          <li>Integrasi WhatsApp & media sosial</li>
+          <li>Domain dan hosting siap pakai</li>
+        </ul>
+      </div>
+
+      <!-- 2. Desain Branding -->
+      <div data-aos="fade-up" data-aos-delay="100" class="bg-white shadow-md rounded-2xl p-6 hover:shadow-xl hover:scale-[1.02] transition-transform">
+        <div class="text-4xl text-blue-600 mb-4">2.</div>
+        <h3 class="text-xl font-bold mb-3 text-gray-800">Desain Branding & Identitas Visual</h3>
+        <p class="text-gray-600 mb-3">
+          Ciptakan citra profesional dengan desain visual yang kuat dan konsisten.
+        </p>
+        <ul class="list-disc list-inside text-gray-600 space-y-1">
+          <li>Desain logo & kartu nama</li>
+          <li>Konten media sosial</li>
+          <li>Branding kit profesional</li>
+        </ul>
+      </div>
+
+      <!-- 3. Digital Marketing -->
+      <div data-aos="fade-up" data-aos-delay="200" class="bg-white shadow-md rounded-2xl p-6 hover:shadow-xl hover:scale-[1.02] transition-transform">
+        <div class="text-4xl text-blue-600 mb-4">3.</div>
+        <h3 class="text-xl font-bold mb-3 text-gray-800">Digital Marketing untuk UMKM</h3>
+        <p class="text-gray-600 mb-3">
+          Maksimalkan potensi bisnis Anda dengan strategi pemasaran digital yang efektif.
+        </p>
+        <ul class="list-disc list-inside text-gray-600 space-y-1">
+          <li>Manajemen media sosial</li>
+          <li>Iklan digital (Facebook, Instagram, Google)</li>
+          <li>SEO & optimasi pencarian</li>
+        </ul>
+      </div>
     </div>
+
+      <div data-aos="fade-up" data-aos-delay="200" class="bg-white shadow-md rounded-2xl p-6 hover:shadow-xl hover:scale-[1.02] transition-transform">
+        <div class="text-4xl text-blue-600 mb-4">4.</div>
+        <h3 class="text-xl font-bold mb-3 text-gray-800">Konten Produk & Promosi</h3>
+        <p class="text-gray-600 mb-3">
+          Tampilkan produk Anda dengan foto, video, dan teks promosi yang menarik perhatian pelanggan.
+        </p>
+        <ul class="list-disc list-inside text-gray-600 space-y-1">
+          <li>Fotografi produk</li>
+          <li>Video promosi singkat</li>
+          <li>Copywriting promosi</li>
+        </ul>
+      </div>
+    </div>
+
+ <!-- Portfolio Section -->
+  <section id="portfolio" class="py-20 bg-white text-center">
+    <h2 class="text-3xl font-bold mb-12 text-gray-800">Portofolio Kami</h2>
+    <div class="max-w-6xl mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 px-6">
+
+      <!-- Project 1 -->
+      <div class="portfolio-item bg-gray-100 rounded-2xl overflow-hidden shadow-md hover:shadow-lg transition">
+        <img src="images/umkm-kuliner.jpg" alt="Project 1" class="w-full h-56 object-cover">
+        <div class="p-6 text-left">
+          <h3 class="text-xl font-semibold mb-2">Website UMKM Kuliner</h3>
+          <p class="text-gray-600 text-sm">Website profesional untuk usaha kuliner lokal dengan sistem pemesanan online.</p>
+        </div>
+      </div>
+
+      <!-- Project 2 -->
+      <div class="portfolio-item bg-gray-100 rounded-2xl overflow-hidden shadow-md hover:shadow-lg transition">
+        <img src="images/jasa-desain.jpg" alt="Project 2" class="w-full h-56 object-cover">
+        <div class="p-6 text-left">
+          <h3 class="text-xl font-semibold mb-2">Website Jasa Desain</h3>
+          <p class="text-gray-600 text-sm">Website portofolio untuk menampilkan hasil karya NUYA.</p>
+        </div>
+      </div>
+
+      <!-- Project 3 -->
+      <div class="portfolio-item bg-gray-100 rounded-2xl overflow-hidden shadow-md hover:shadow-lg transition">
+        <img src="images/digital-marketing.jpg" alt="Project 3" class="w-full h-56 object-cover">
+        <div class="p-6 text-left">
+          <h3 class="text-xl font-semibold mb-2">Digital Marketing UMKM</h3>
+          <p class="text-gray-600 text-sm">Website portofolio untuk menampilkan hasil karya NUYA.</p>
+        </div>
+      </div>
+
+      <!-- Project 4 -->
+      <div class="portfolio-item bg-gray-100 rounded-2xl overflow-hidden shadow-md hover:shadow-lg transition">
+        <img src="images/konten-produk.jpg" alt="Project 4" class="w-full h-56 object-cover">
+        <div class="p-6 text-left">
+          <h3 class="text-xl font-semibold mb-2">Konten Produk & Promosi</h3>
+          <p class="text-gray-600 text-sm">Website portofolio untuk menampilkan hasil karya NUYA.</p>
+        </div>
+      </div>
+      </div>
   </section>
 
-  <section id="testimoni" class="section alt">
-    <div class="container">
-      <h2>Testimoni</h2>
-      <p>(Testimoni pelanggan akan ditambahkan di sini)</p>
-    </div>
-  </section>
-
-  <section id="contact" class="section">
-  <div class="container">
-    <h2>Kontak Kami</h2>
-    <p>Isi form berikut atau chat langsung via WhatsApp untuk konsultasi.</p>
-
-    <form class="contact-form">
-      <label>Nama</label>
-      <input type="text" placeholder="Nama lengkap" required>
-
-      <label>Email</label>
-      <input type="email" placeholder="Alamat email" required>
-
-      <label>Pesan</label>
-      <textarea placeholder="Tulis pesan kamu..." required></textarea>
-
-      <button type="submit" class="btn primary">Kirim Pesan</button>
-    </form>
-
-    <div style="margin-top:20px;">
-      <p>Atau hubungi langsung:</p>
-      <a href="https://wa.me/6281234567890" target="_blank" class="btn secondary">
-        Chat WhatsApp
+    <!-- CTA -->
+    <div data-aos="fade-up" data-aos-delay="150" class="text-center mt-16">
+      <h3 class="text-2xl font-semibold text-gray-800 mb-4">
+        Siap membawa bisnismu naik level di dunia digital?
+      </h3>
+      <a href="#contact" class="bg-blue-600 hover:bg-blue-700 text-white py-3 px-6 rounded-lg font-semibold shadow-md transition">
+        💬 Konsultasi Gratis Sekarang
       </a>
     </div>
   </div>
 </section>
 
+  <!-- Contact -->
+  <section id="contact" class="py-20 bg-gray-50 text-center">
+    <div class="container mx-auto px-6">
+      <h2 class="text-3xl font-bold mb-6">Kontak Kami</h2>
+      <p class="text-gray-600 mb-6">Hubungi kami untuk konsultasi gratis.</p>
+      <p class="font-bold">📧 Email: cs@nuyastudio.com</p>
+      <p class="font-bold">📞 Telp/WA: +62 123-456-789</p>
+    </div>
+  </section>
 
   <!-- Footer -->
-  <footer class="site-footer">
-    <div class="container">
-      <p>© 2025 NIKY Service • Web UMKM</p>
+  <footer class="bg-gray-900 text-white py-12">
+    <div class="container mx-auto px-6 grid md:grid-cols-3 gap-8">
+      <div>
+        <img src="images/NUYA STUDIO - Copy.png" alt="NUYA Studio" class="h-12 mb-4">
+        <p class="text-gray-400">NUYA Studio mendukung UMKM untuk lebih dikenal, menjangkau pelanggan, dan mampu bersaing di era digital.</p>
+      </div>
+      <div>
+        <h3 class="font-bold mb-3">NUYA Studio</h3>
+        <ul class="space-y-2 text-gray-400">
+          <li><a href="#about" class="hover:text-white">Tentang Kami</a></li>
+          <li><a href="#contact" class="hover:text-white">Kontak</a></li>
+        </ul>
+      </div>
+      <div>
+        <h3 class="font-bold mb-3">Hubungi Kami</h3>
+        <p class="text-gray-400">Email: cs@nuyastudio.com</p>
+        <p class="text-gray-400">WA: +62 +62 123-456-789</p>
+      </div>
+    </div>
+    <div class="border-t border-gray-800 mt-8 pt-6 text-center text-gray-500">
+      © 2025 NUYA Studio. All Rights Reserved.
     </div>
   </footer>
+
+  <!-- Back to Top -->
+  <button id="back-to-top" class="fixed bottom-6 right-6 w-12 h-12 rounded-full shadow-lg flex items-center justify-center opacity-0 invisible transition">
+    <img src="images/panahatas.png" alt="Back to Top" class="w-10 h-10" />
+  </button>
+
+  <script src="https://kit.fontawesome.com/yourcode.js" crossorigin="anonymous"></script>
+  <script src="script.js"></script>
 </body>
 </html>
